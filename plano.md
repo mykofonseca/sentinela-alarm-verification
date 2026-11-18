@@ -327,7 +327,7 @@ T8 Acesso ──► T1 Painel ──(novo alarme)──► T2 Verificação ─�
 
 **Link do YouTube (não listado):** `COLE_AQUI_O_LINK_DO_VIDEO` *(verificar se abre em janela anônima antes de entregar)*
 
-Um vídeo de apoio gerado a partir deste documento acompanha a entrega (`video/pitch_sentinela.mp4`, 1min52s, 1920×1080, com narração sintetizada em português). O grupo pode publicá-lo como está ou regravá-lo com a própria voz seguindo o roteiro abaixo.
+O vídeo (`video/pitch_sentinela.mp4`, 1min52s, 1920×1080) é narrado pelo próprio grupo. O roteiro de fala detalhado está em `roteiro_fala.md`; a tabela abaixo resume as cenas.
 
 **Roteiro (≈ 1min52s, mesmo texto da narração do vídeo de apoio):**
 

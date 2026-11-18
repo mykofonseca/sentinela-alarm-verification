@@ -48,7 +48,8 @@ O alarme chega ao operador já com evidência visual, classificação da IA e co
 ├── plano.md                                # documento de planejamento (fonte em Markdown)
 ├── integrantes.txt                         # integrantes e link do vídeo
 ├── telas/                                  # esboços das telas (PNG)
-├── video/pitch_sentinela.mp4               # vídeo pitch (≈1min52s)
+├── video/pitch_sentinela.mp4               # vídeo pitch sem áudio (≈1min52s)
+├── roteiro_fala.md                         # roteiro de fala para narrar o vídeo
 └── fonte/                                  # código que gera os entregáveis
     ├── build_pdf.py                        # plano.md -> documento.html -> PDF
     ├── render.py                           # renderiza HTML em PNG/PDF (Edge headless)

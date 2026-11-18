@@ -1,0 +1,46 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><title>T5 Saúde dos Dispositivos</title><link rel="stylesheet" href="wf.css"><script src="map.js"></script>
+<style>
+.layout{display:grid;grid-template-columns:1fr 440px;grid-template-rows:auto auto 1fr;gap:12px;height:100%}
+.hd{grid-column:1/3;display:flex;align-items:center;gap:12px}
+.kpis{grid-column:1/3;display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+.chips{display:flex;gap:6px;margin-bottom:10px}
+</style></head><body>
+<div class="app">
+ <div class="top"><div class="logo"><i></i>SENTINELA</div><div class="site">Sítio Ilha Azul (fictício) · Manutenção</div><div class="sp"></div>
+  <span class="pill">17/11/2026 · 15:43</span><span class="pill">Diego R. · Técnico de sistemas</span></div>
+ <div class="nav"><a><b></b>Painel</a><a><b></b>Alarmes</a><a><b></b>Drones</a><a><b></b>Equipes</a><a class="on"><b></b>Disposit.</a><a><b></b>Trabalhos</a><a><b></b>Relatórios</a><a><b></b>Admin</a></div>
+ <div class="main"><div class="layout">
+  <div class="hd"><h1>Saúde dos dispositivos</h1><span class="s muted">status calculado a partir do último sinal (heartbeat) de cada equipamento</span><div class="grow"></div><div class="btn">Exportar CSV</div><div class="btn p">＋ Cadastrar dispositivo</div></div>
+  <div class="kpis">
+   <div class="panel kpi"><span class="l">Sensores de cerca</span><span class="v">32</span><span class="s"><span class="dot g"></span>31 ok · <span style="color:var(--amber)">1 atenção</span></span></div>
+   <div class="panel kpi"><span class="l">Câmeras</span><span class="v">8</span><span class="s"><span class="dot g"></span>7 ok · <span style="color:var(--red)">1 offline</span></span></div>
+   <div class="panel kpi"><span class="l">Nós edge</span><span class="v">4</span><span class="s"><span class="dot g"></span>4 ok · CPU média 41%</span></div>
+   <div class="panel kpi"><span class="l">Drones</span><span class="v">2</span><span class="s"><span class="dot g"></span>2 ok · próx. revisão D1 em 6 dias</span></div>
+   <div class="panel kpi"><span class="l">Disponibilidade (30 d)</span><span class="v">99,2%</span><span class="s muted">meta 99,0%</span></div>
+  </div>
+  <div class="panel" style="overflow:hidden">
+   <div class="chips"><span class="tag b">Todos</span><span class="tag n">Com problema (2)</span><span class="tag n">Sensores</span><span class="tag n">Câmeras</span><span class="tag n">Edge</span><span class="tag n">Drones</span><div class="grow"></div><div class="field" style="width:220px;padding:4px 10px">🔍 Buscar por ID ou zona</div></div>
+   <table><tr><th>ID</th><th>Tipo</th><th>Zona</th><th>Status</th><th>Último sinal</th><th>Bateria / sinal</th><th>Ação</th></tr>
+   <tr style="background:var(--redbg)"><td><b>C7</b></td><td>Câmera térmica</td><td>Z6/Z7</td><td><span class="tag r">Offline</span></td><td>há 14 min</td><td>— / 0%</td><td><span class="btn" style="padding:4px 8px">Abrir OS</span></td></tr>
+   <tr style="background:var(--amberbg)"><td><b>S6-2</b></td><td>Barreira infravermelha</td><td>Z6</td><td><span class="tag a">Bateria baixa</span></td><td>há 5 s</td><td><div class="bar" style="width:90px;display:inline-block"><i style="width:14%;background:var(--amber)"></i></div> 14%</td><td><span class="btn" style="padding:4px 8px">Abrir OS</span></td></tr>
+   <tr><td><b>S3-3</b></td><td>Sensor de vibração</td><td>Z3</td><td><span class="tag g">OK</span> <span class="tag r">em alarme</span></td><td>há 1 s</td><td><div class="bar" style="width:90px;display:inline-block"><i style="width:78%;background:var(--green)"></i></div> 78%</td><td class="muted">—</td></tr>
+   <tr><td><b>C3</b></td><td>Câmera térmica</td><td>Z3</td><td><span class="tag g">OK</span></td><td>há 1 s</td><td>— / 96%</td><td class="muted">—</td></tr>
+   <tr><td><b>EDGE-02</b></td><td>Nó de edge computing</td><td>Z3/Z4</td><td><span class="tag g">OK</span></td><td>há 2 s</td><td>CPU 63% · 48 °C</td><td class="muted">—</td></tr>
+   <tr><td><b>S2-1</b></td><td>Sensor de vibração</td><td>Z2</td><td><span class="tag g">OK</span></td><td>há 3 s</td><td><div class="bar" style="width:90px;display:inline-block"><i style="width:91%;background:var(--green)"></i></div> 91%</td><td class="muted">—</td></tr>
+   <tr><td><b>D1</b></td><td>Drone quadricóptero</td><td>Base</td><td><span class="tag b">Em missão</span></td><td>há 1 s</td><td>87% / 98%</td><td class="muted">—</td></tr>
+   <tr><td><b>C1</b></td><td>Câmera PTZ visível</td><td>Z1/Z8</td><td><span class="tag g">OK</span></td><td>há 1 s</td><td>— / 99%</td><td class="muted">—</td></tr>
+   <tr><td colspan="7" class="muted s">Mostrando 8 de 46 · página 1 de 6 ›</td></tr></table>
+  </div>
+  <div class="col" style="min-height:0">
+   <div class="panel" style="border-color:var(--red);border-left:5px solid var(--red)"><div class="ph"><h3 style="color:var(--red)">Ponto cego detectado</h3><span class="s muted">há 14 min</span></div>
+    <div style="font-weight:600">Câmera C7 sem sinal: trecho entre Z6 e Z7 sem verificação visual automática.</div>
+    <div class="s muted" style="margin:6px 0 10px">Sugestão do sistema: priorizar drone D2 para alarmes nessas zonas até o reparo e incluir o trecho na próxima ronda.</div>
+    <div class="row" style="gap:8px"><div class="btn p">Gerar ordem de serviço</div><div class="btn">Avisar supervisor</div></div></div>
+   <div class="panel grow" style="padding:0;overflow:hidden"><div id="map" style="height:100%"></div></div>
+   <div class="panel"><div class="ph"><h3>Ordens de serviço abertas</h3></div>
+    <table><tr><td><b>OS-318</b> · S6-2 troca de bateria</td><td><span class="tag a">Agendada 16:30</span></td></tr><tr><td><b>OS-317</b> · C5 limpeza de lente</td><td><span class="tag g">Concluída</span></td></tr></table></div>
+  </div>
+ </div><span class="sketch">Esboço T5 · Saúde dos dispositivos</span></div>
+</div>
+<script>drawMap(document.getElementById('map'),{offlineCams:[7],offlineZones:[6],offlineSensors:['S6-2'],legendH:84});</script>
+</body></html>

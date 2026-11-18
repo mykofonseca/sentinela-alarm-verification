@@ -1,0 +1,38 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><title>T3 Missão do Drone</title><link rel="stylesheet" href="wf.css"><script src="map.js"></script>
+<style>
+.layout{display:grid;grid-template-columns:1fr 420px;grid-template-rows:auto 1fr;gap:12px;height:100%}
+.hd{grid-column:1/3;display:flex;align-items:center;gap:14px}
+.tele{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.tele div{border:1px solid var(--line2);border-radius:6px;padding:7px 9px}
+.tele b{display:block;font-size:18px}
+.tele span{font-size:10.5px;color:var(--ink3);text-transform:uppercase}
+.chk div{display:flex;gap:8px;font-size:12.5px;padding:3px 0}
+</style></head><body>
+<div class="app">
+ <div class="top"><div class="logo"><i></i>SENTINELA</div><div class="site">Sítio Ilha Azul (fictício) · Central de Segurança</div><div class="sp"></div>
+  <span class="pill r">● 3 alarmes abertos</span><span class="pill">17/11/2026 · 15:42:20</span><span class="pill">Larissa S. · Piloto remota</span></div>
+ <div class="nav"><a><b></b>Painel</a><a><b></b>Alarmes</a><a class="on"><b></b>Drones</a><a><b></b>Equipes</a><a><b></b>Disposit.</a><a><b></b>Trabalhos</a><a><b></b>Relatórios</a><a><b></b>Admin</a></div>
+ <div class="main"><div class="layout">
+  <div class="hd"><h1>Missão M-077 · Drone D1 → Zona Z3</h1><span class="tag b">Em rota</span><span class="s muted">vinculada ao alarme <b>#A-0142</b> · solicitada por Carla M. às 15:41:40</span><div class="grow"></div>
+   <div class="btn">Orbitar ponto</div><div class="btn">Pairar</div><div class="btn r">Retornar à base</div></div>
+  <div class="panel" style="padding:0;overflow:hidden"><div id="map" style="height:100%"></div>
+   <div style="position:absolute;left:14px;top:14px;background:#fff;border:1px solid var(--line);border-radius:6px;padding:8px 12px;width:280px">
+    <div class="s muted">Progresso da rota</div><div style="font-weight:700;margin:2px 0 6px">420 m de 610 m · chegada estimada em 0:28</div><div class="bar"><i style="width:69%"></i></div>
+    <div class="s muted" style="margin-top:6px">Rota automática dentro da geocerca de voo autorizada · altitude fixa 40 m</div></div></div>
+  <div class="col" style="min-height:0">
+   <div class="panel"><div class="ph"><h3>Câmera do drone (simulada)</h3><span class="tag n">Térmica ▾</span></div>
+    <div class="cam" style="height:220px"><div id="cam" style="height:100%"></div><div class="hud">D1 · ALT 40 m · 15:42:20</div><div class="hud2">ZOOM 2x</div></div></div>
+   <div class="panel"><div class="ph"><h3>Telemetria</h3><span class="s muted">atualiza a cada 1 s</span></div>
+    <div class="tele"><div><span>Bateria</span><b>87%</b></div><div><span>Altitude</span><b>40 m</b></div><div><span>Velocidade</span><b>12 m/s</b></div>
+    <div><span>Link de rádio</span><b>98%</b></div><div><span>Vento</span><b>12 km/h</b></div><div><span>Autonomia</span><b>21 min</b></div></div></div>
+   <div class="panel"><div class="ph"><h3>Checklist de segurança do voo</h3></div>
+    <div class="chk"><div><span style="color:var(--green)">✔</span>Pré-voo automático aprovado (GPS, motores, bateria)</div><div><span style="color:var(--green)">✔</span>Piloto remoto responsável confirmou a missão</div><div><span style="color:var(--green)">✔</span>Rota dentro da geocerca autorizada</div><div><span style="color:var(--amber)">●</span>Retorno automático se bateria &lt; 30% ou perda de link</div></div></div>
+   <div class="panel grow"><div class="ph"><h3>Frota</h3></div>
+    <table><tr><td><b>D1</b></td><td><span class="tag b">Em missão</span></td><td class="muted">87%</td></tr><tr><td><b>D2</b></td><td><span class="tag g">Pronto</span></td><td class="muted">96%</td></tr></table></div>
+  </div>
+ </div><span class="sketch">Esboço T3 · Missão do drone</span></div>
+</div>
+<script>
+camScene(document.getElementById('cam'),{x:300,y:170,s:.7,label:'PESSOA 0.94'});
+drawMap(document.getElementById('map'),{alarm:[850,156],alarmZone:3,alarmLabel:'#A-0142',sensors:true,route:{to:[850,156],at:[840,288],qx:860,qy:420,eta:'ETA 0:28'}});
+</script></body></html>

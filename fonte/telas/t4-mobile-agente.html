@@ -1,0 +1,64 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><title>T4 Agente de Resposta (mobile)</title><link rel="stylesheet" href="wf.css"><script src="map.js"></script>
+<style>
+body{background:#E4E7EC}
+.wrap{display:flex;gap:56px;justify-content:center;align-items:flex-start;padding:30px 40px 0}
+.ph-col{display:flex;flex-direction:column;align-items:center;gap:12px;width:330px}
+.phone{width:330px;height:690px;border:10px solid #1B2430;border-radius:38px;background:#fff;overflow:hidden;position:relative;display:flex;flex-direction:column}
+.sb{height:28px;display:flex;justify-content:space-between;align-items:center;padding:0 18px;font-size:11px;font-weight:600}
+.ab{background:var(--navy);color:#fff;padding:10px 14px;font-weight:700;display:flex;justify-content:space-between;align-items:center}
+.ct{padding:12px 14px;display:flex;flex-direction:column;gap:10px;flex:1}
+.cap{font-size:13px;color:var(--ink2);text-align:center;max-width:320px}
+.cap b{color:var(--ink);display:block;font-size:15px;margin-bottom:2px}
+.bigbtn{border-radius:10px;padding:14px;text-align:center;font-weight:700;font-size:15px}
+.seg{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--line);border-radius:8px;overflow:hidden;font-size:12px;text-align:center}
+.seg div{padding:9px 4px;border-right:1px solid var(--line)} .seg .on{background:var(--green);color:#fff;font-weight:700}
+</style></head><body>
+<div class="wrap">
+ <div class="ph-col"><div class="phone"><div class="sb"><span>15:42</span><span>● ● ▮</span></div>
+  <div class="ab"><span>SENTINELA · Equipe Alfa</span><span>☰</span></div>
+  <div class="ct">
+   <div style="background:var(--redbg);border:1px solid #f3b9b9;border-radius:10px;padding:12px">
+    <div style="color:var(--red);font-weight:800;font-size:12px;letter-spacing:.5px">NOVA OCORRÊNCIA · PRIORIDADE CRÍTICA</div>
+    <div style="font-size:19px;font-weight:800;margin:4px 0">Intrusão confirmada · Z3</div>
+    <div class="s">Alarme #A-0142 · confirmado por Carla M. (Central) às 15:42:05</div></div>
+   <div class="cam" style="height:150px"><div id="c1" style="height:100%"></div><div class="hud">D1 · 15:42:01</div></div>
+   <div class="s"><b>O que se sabe:</b> 1 pessoa, a pé, a ~15 m da cerca externa, deslocando-se para o interior. Drone D1 acompanhando.</div>
+   <div class="s muted">Distância: 260 m · tempo estimado a pé: 3 min</div>
+   <div class="grow"></div>
+   <div class="bigbtn" style="background:var(--green);color:#fff">Aceitar e iniciar deslocamento</div>
+   <div class="bigbtn" style="border:1px solid var(--line);color:var(--ink2);font-size:13px;padding:10px">Não posso atender (justificar)</div>
+  </div></div>
+  <div class="cap"><b>a) Recebimento</b>Notificação com evidência visual e prioridade; aceite em 1 toque.</div></div>
+
+ <div class="ph-col"><div class="phone"><div class="sb"><span>15:43</span><span>● ● ▮</span></div>
+  <div class="ab"><span>#A-0142 · Z3</span><span class="tag r" style="font-size:11px">02:34</span></div>
+  <div style="height:330px;border-bottom:1px solid var(--line)" id="m"></div>
+  <div class="ct">
+   <div class="seg"><div>Aceita</div><div class="on">A caminho</div><div>No local</div></div>
+   <div class="s"><b>Posição do alvo</b> atualizada pelo drone D1 há 4 s</div>
+   <div class="s muted">Contato com a Central: canal de rádio 2 · botão abaixo registra pedido de apoio no sistema</div>
+   <div class="grow"></div>
+   <div class="bigbtn" style="background:var(--blue);color:#fff">Cheguei ao local</div>
+   <div class="bigbtn" style="border:2px solid var(--red);color:var(--red);font-size:13px;padding:10px">Solicitar apoio</div>
+  </div></div>
+  <div class="cap"><b>b) Deslocamento</b>Mapa com sua posição, a do drone e do alvo; status atualiza a Central em tempo real.</div></div>
+
+ <div class="ph-col"><div class="phone"><div class="sb"><span>15:51</span><span>● ● ▮</span></div>
+  <div class="ab"><span>Encerrar ocorrência</span><span>✕</span></div>
+  <div class="ct">
+   <div><span class="lbl">Resultado</span>
+    <div class="col" style="gap:6px"><div class="field" style="color:var(--ink);border-color:var(--blue);background:var(--bluebg)">◉ Pessoa abordada e conduzida</div><div class="field">○ Ninguém encontrado no local</div><div class="field">○ Falso alarme confirmado no local</div></div></div>
+   <div><span class="lbl">Fotos (opcional)</span><div class="row" style="gap:8px"><div style="width:70px;height:70px;border:1px dashed var(--line);border-radius:8px;display:flex;align-items:center;justify-content:center;color:var(--ink3);font-size:22px">＋</div><div style="width:70px;height:70px;border-radius:8px;background:#cfd5dc"></div></div></div>
+   <div><span class="lbl">Relato breve</span><div class="field" style="height:84px">Ex.: pessoa sem identificação na cerca externa; encaminhada à portaria…</div></div>
+   <div class="s muted">Horários registrados automaticamente: aceite 15:42:10 · chegada 15:45:02</div>
+   <div class="grow"></div>
+   <div class="bigbtn" style="background:var(--blue);color:#fff">Enviar e encerrar</div>
+  </div></div>
+  <div class="cap"><b>c) Encerramento</b>Relato curto com horários automáticos – alimenta os indicadores e a auditoria.</div></div>
+</div>
+<span class="sketch">Esboço T4 · App web responsivo do agente de resposta</span>
+<script>
+camScene(document.getElementById('c1'),{x:300,y:150,s:.6,label:'PESSOA',lw:70});
+drawMap(document.getElementById('m'),{alarm:[850,156],alarmZone:3,alarmLabel:' ',legend:false,edge:false,cams:false,route:{to:[850,156],at:[850,190],qx:860,qy:420,eta:' '},agents:[{n:'Você',p:[880,370],to:[860,200]}]});
+document.querySelector('#m svg').setAttribute('viewBox','600 40 400 420');
+</script></body></html>

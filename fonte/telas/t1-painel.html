@@ -1,0 +1,54 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><title>T1 Painel Operacional</title><link rel="stylesheet" href="wf.css"><script src="map.js"></script>
+<style>
+.layout{display:grid;grid-template-columns:1fr 360px;grid-template-rows:auto 1fr 112px;gap:12px;height:100%}
+.mapp{grid-column:1;grid-row:2}.queue{grid-column:2;grid-row:2/4}.evts{grid-column:1;grid-row:3}
+.kpis{grid-column:1/3;display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+.alarm{border:1px solid var(--line);border-left:5px solid var(--red);border-radius:6px;padding:9px 10px;margin-bottom:8px;background:#fff}
+.alarm.a{border-left-color:var(--amber)} .alarm.n{border-left-color:#9aa3af}
+.alarm .t{display:flex;justify-content:space-between;font-weight:700}
+.timer{font-variant-numeric:tabular-nums;color:var(--red);font-weight:700}
+.feed{font-size:12px;display:grid;grid-template-columns:repeat(2,1fr);gap:4px 24px}
+</style></head><body>
+<div class="app">
+ <div class="top"><div class="logo"><i></i>SENTINELA</div><div class="site">Sítio Ilha Azul (fictício) · Central de Segurança</div><div class="sp"></div>
+  <span class="pill r">● 3 alarmes abertos</span><span class="pill">Turno B · 14:00–22:00</span><span class="pill">17/11/2026 · 15:42:08</span><span class="pill">Carla M. · Operadora</span></div>
+ <div class="nav"><a class="on"><b></b>Painel</a><a><b></b>Alarmes</a><a><b></b>Drones</a><a><b></b>Equipes</a><a><b></b>Disposit.</a><a><b></b>Trabalhos</a><a><b></b>Relatórios</a><a><b></b>Admin</a></div>
+ <div class="main"><div class="layout">
+  <div class="kpis">
+   <div class="panel kpi"><span class="l">Alarmes abertos</span><span class="v" style="color:var(--red)">3</span><span class="s muted">1 crítico · 1 médio · 1 baixo</span></div>
+   <div class="panel kpi"><span class="l">Tempo médio p/ decisão (hoje)</span><span class="v">0:52</span><span class="s" style="color:var(--green)">▼ 38% vs. média do mês</span></div>
+   <div class="panel kpi"><span class="l">Falsos alarmes (24 h)</span><span class="v">11 / 14</span><span class="s muted">7 animais · 3 vento · 1 manutenção</span></div>
+   <div class="panel kpi"><span class="l">Dispositivos</span><span class="v">46 <span style="font-size:14px;color:var(--amber)">· 2 falhas</span></span><span class="s muted">C7 offline · S6-2 bateria baixa</span></div>
+   <div class="panel kpi"><span class="l">Drones</span><span class="v">D1 <span class="tag b" style="vertical-align:middle">em missão</span></span><span class="s muted">D2 pronto · bateria 96%</span></div>
+  </div>
+  <div class="panel mapp" style="padding:0;overflow:hidden"><div id="map" style="height:100%"></div>
+   <div style="position:absolute;right:12px;top:12px;display:flex;gap:6px"><span class="tag n">Camadas ▾</span><span class="tag n">Sensores ✓</span><span class="tag n">Câmeras ✓</span><span class="tag n">Equipes ✓</span><span class="tag n">＋ ／ －</span></div></div>
+  <div class="panel queue" style="overflow:hidden">
+   <div class="ph"><h3>Fila de alarmes</h3><span class="tag n">Ordenar: prioridade ▾</span></div>
+   <div class="alarm"><div class="t"><span>#A-0142 · Zona Z3</span><span class="timer">00:37</span></div>
+    <div class="s">Vibração na cerca (S3-3) + câmera C3</div>
+    <div class="s" style="margin:4px 0">IA: <b>pessoa</b> (91%) · nó EDGE-02</div>
+    <div class="row" style="gap:6px"><span class="tag r">Crítico</span><span class="tag b">Drone D1 a caminho</span></div>
+    <div class="btn p full" style="margin-top:8px">Abrir verificação →</div></div>
+   <div class="alarm a"><div class="t"><span>#A-0141 · Zona Z6</span><span class="timer" style="color:var(--amber)">03:12</span></div>
+    <div class="s">Barreira infravermelha (S6-2) · câmera C7 sem sinal</div>
+    <div class="s" style="margin:4px 0">IA: <b>sem imagem</b> – verificação por drone sugerida</div>
+    <div class="row" style="gap:6px"><span class="tag a">Médio</span><span class="tag n">Aguardando operador</span></div></div>
+   <div class="alarm n"><div class="t"><span>#A-0140 · Zona Z2</span><span class="timer" style="color:var(--ink2)">06:48</span></div>
+    <div class="s">Vibração na cerca (S2-1)</div>
+    <div class="s" style="margin:4px 0">IA: <b>animal</b> (84%) · trabalho autorizado na Z2 até 16:00</div>
+    <div class="row" style="gap:6px"><span class="tag n">Baixo</span><span class="tag g">Provável falso alarme</span></div></div>
+   <div class="ph" style="margin-top:12px"><h3>Equipes de resposta</h3></div>
+   <table><tr><td><span class="dot g"></span>Equipe Alfa (2)</td><td class="muted">Patrulha Z4</td><td><span class="tag g">Disponível</span></td></tr>
+   <tr><td><span class="dot g"></span>Equipe Bravo (2)</td><td class="muted">Portaria</td><td><span class="tag g">Disponível</span></td></tr>
+   <tr><td><span class="dot n"></span>Equipe Charlie (2)</td><td class="muted">Base</td><td><span class="tag n">Pausa</span></td></tr></table>
+  </div>
+  <div class="panel evts"><div class="ph"><h3>Últimos eventos</h3><span class="s muted">atualização automática a cada 5 s</span></div>
+   <div class="feed"><div><span class="muted">15:41:31</span> · Alarme #A-0142 criado – S3-3 vibração (intensidade 0,82)</div><div><span class="muted">15:41:33</span> · EDGE-02 classificou C3: pessoa 91%</div>
+   <div><span class="muted">15:41:40</span> · Missão M-077 iniciada · D1 decolou da base</div><div><span class="muted">15:38:56</span> · Câmera C7 sem heartbeat há 10 min</div>
+   <div><span class="muted">15:35:20</span> · #A-0139 encerrado: falso alarme (vento)</div><div><span class="muted">15:30:02</span> · Trabalho autorizado T-12 iniciado na Z2</div></div></div>
+ </div>
+ <span class="sketch">Esboço T1 · Painel operacional</span></div>
+</div>
+<script>drawMap(document.getElementById('map'),{alarm:[850,156],alarmZone:3,alarmLabel:'#A-0142',offlineCams:[7],offlineZones:[],offlineSensors:['S6-2'],route:{to:[850,156],at:[821,347],qx:860,qy:420,eta:'ETA 0:28'},agents:[{n:'Alfa',p:[880,380]},{n:'Bravo',p:[330,555]}]});</script>
+</body></html>

@@ -1,0 +1,29 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><title>T8 Acesso</title><link rel="stylesheet" href="wf.css"><script src="map.js"></script>
+<style>
+.wrap{display:grid;grid-template-columns:1fr 520px;height:900px}
+.left{background:var(--navy);color:#fff;padding:60px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden}
+.left #m{position:absolute;inset:180px -60px 40px 40px;opacity:.07;filter:invert(1)}
+.right{background:#fff;padding:70px 64px;display:flex;flex-direction:column;gap:16px;justify-content:center}
+.prof{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.prof div{border:1px solid var(--line);border-radius:6px;padding:9px 10px;font-size:12.5px}
+.prof .on{border:2px solid var(--blue);background:var(--bluebg);color:var(--blue);font-weight:700}
+</style></head><body>
+<div class="wrap">
+ <div class="left"><div id="m"></div>
+  <div class="logo" style="font-size:24px;position:relative"><i style="width:30px;height:30px"></i>SENTINELA</div>
+  <div style="position:relative;max-width:560px"><div style="font-size:34px;font-weight:700;line-height:1.15">Do alarme à decisão em menos de um minuto.</div>
+   <div style="opacity:.8;margin-top:12px;font-size:15px">Sensores, visão computacional na borda e drones trabalhando juntos para verificar cada alarme de perímetro – com o operador sempre no controle.</div></div>
+  <div style="position:relative;opacity:.6;font-size:12px">Protótipo acadêmico · FIAP × AMAZUL (desafio) · dados 100% fictícios</div></div>
+ <div class="right">
+  <h1 style="font-size:24px">Acessar o sistema</h1>
+  <div><span class="lbl">Usuário (matrícula)</span><div class="field">ex.: 004512</div></div>
+  <div><span class="lbl">Senha</span><div class="field">••••••••</div></div>
+  <div><span class="lbl">Perfil de acesso (no protótipo, escolhido aqui para demonstração)</span>
+   <div class="prof"><div class="on">Operador da central</div><div>Supervisor de turno</div><div>Agente de resposta</div><div>Piloto remoto de drone</div><div>Técnico de manutenção</div><div>Coordenação / gestão</div><div>Administrador do sistema</div><div>Auditor (somente leitura)</div></div></div>
+  <div class="btn p" style="padding:12px">Entrar</div>
+  <div class="s muted">Em produção: autenticação com segundo fator e perfis atribuídos pelo administrador. Todas as ações ficam registradas na trilha de auditoria.</div>
+ </div>
+</div>
+<span class="sketch">Esboço T8 · Acesso e perfis</span>
+<script>drawMap(document.getElementById('m'),{legend:false});</script>
+</body></html>

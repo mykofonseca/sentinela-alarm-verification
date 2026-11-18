@@ -13,3 +13,6 @@ Thumbs.db
 desktop.ini
 .vscode/
 .idea/
+
+# HTML intermediário gerado por fonte/build_pdf.py
+fonte/documento.html

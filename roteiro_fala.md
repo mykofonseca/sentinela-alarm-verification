@@ -8,7 +8,7 @@ Ritmo: versão para fala rápida, cerca de 3 palavras por segundo. Se um trecho 
 ---
 
 ### 1. Abertura — 0:00 a 0:10 (11 s)
-*Slide: slide de título*
+*Slide: título SENTINELA*
 
 > Olá! Eu sou o Maykon e, em nome do grupo, apresento o SENTINELA: uma plataforma para verificar alarmes de perímetro em instalações nucleares, criada para o desafio da FIAP com a AMAZUL.
 

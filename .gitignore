@@ -16,3 +16,6 @@ desktop.ini
 
 # HTML intermediário gerado por fonte/build_pdf.py
 fonte/documento.html
+
+# Pasta local de entrega (cópias)
+ENTREGA/

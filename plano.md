@@ -4,7 +4,7 @@
 Ciências da Computação · FIAP · Prof. Rodrigo Settervall Moraes
 Desafio em parceria com a AMAZUL — *Segurança Física em Instalações Nucleares*
 
-**Integrantes:** Gustavo Franzoti Gonçalves (RM566983) · Maykon Santana Fonseca (RM567041)
+**Integrantes:** Gustavo Franzoti Gonçalves (RM566983) · Lincoln Simao Pereira (RM567284) · Maykon Santana Fonseca (RM567041) · Nicolas Sakaue Nishimura (RM567752)
 
 > **Aviso:** todas as informações sobre instalações, plantas, dispositivos, pessoas, empresas e números de operação neste documento são **fictícias** ou vêm de **fontes públicas** citadas. O "Sítio Ilha Azul" é um local inventado. Este documento não representa plantas reais, vulnerabilidades ou procedimentos operacionais de nenhuma instalação nuclear.
 

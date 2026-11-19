@@ -3,6 +3,8 @@ Ciencias da Computacao - FIAP - Prof. Rodrigo Settervall Moraes
 
 Integrantes (nome completo - RM):
 1. Gustavo Franzoti Gonçalves - RM566983
-2. Maykon Santana Fonseca - RM567041
+2. Lincoln Simao Pereira - RM567284
+3. Maykon Santana Fonseca - RM567041
+4. Nicolas Sakaue Nishimura - RM567752
 
 Link do video pitch (YouTube, nao listado): COLE_AQUI_O_LINK_DO_VIDEO

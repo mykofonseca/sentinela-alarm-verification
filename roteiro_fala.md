@@ -8,7 +8,7 @@ Dica: fale em ritmo tranquilo. Se sobrar tempo no bloco, faça uma pausa, sem ac
 ### 1. Abertura — 0:00 a 0:11 (11 s)
 *Slide: título SENTINELA*
 
-> Olá! Eu sou o Maykon, e junto com o Gustavo apresento o SENTINELA: um sistema que ajuda a verificar alarmes de perímetro em instalações nucleares.
+> Olá! Nós somos Gustavo, Lincoln, Maykon e Nicolas, e apresentamos o SENTINELA: um sistema que ajuda a verificar alarmes de perímetro em instalações nucleares.
 
 ### 2. Problema — 0:11 a 0:34 (23 s)
 *Slide: o problema e a pergunta "Como podemos..."*

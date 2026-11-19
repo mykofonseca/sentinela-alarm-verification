@@ -325,21 +325,21 @@ T8 Acesso ──► T1 Painel ──(novo alarme)──► T2 Verificação ─�
 
 ## 5. Vídeo pitch
 
-**Link do YouTube (não listado):** `COLE_AQUI_O_LINK_DO_VIDEO` *(verificar se abre em janela anônima antes de entregar)*
+**Link do YouTube (não listado):** [https://youtu.be/0dk0inX6b4o](https://youtu.be/0dk0inX6b4o)
 
-O vídeo (`video/pitch_sentinela.mp4`, 1min52s, 1920×1080) é narrado pelo próprio grupo. O roteiro de fala detalhado está em `roteiro_fala.md`; a tabela abaixo resume as cenas.
+O vídeo (1min52s, 1920×1080) é apresentado por Maykon Santana Fonseca, em nome do grupo. O roteiro completo também está em `roteiro_fala.md`.
 
-**Roteiro (≈ 1min52s, mesmo texto da narração do vídeo de apoio):**
+**Roteiro (≈ 1min52s):**
 
 | Tempo | Cena (o que aparece) | Fala |
 |---|---|---|
-| 0:00–0:11 | Título SENTINELA | "Em uma instalação nuclear, todo alarme de perímetro precisa de uma resposta rápida: é real ou não é? Nós somos o grupo SENTINELA." |
-| 0:11–0:34 | Problema e pergunta "Como podemos..." | "Hoje, o operador procura a câmera certa, interpreta a imagem e, na dúvida, manda uma equipe só para ver. A maioria dos alarmes vem de animais, vento ou vegetação. Nossa pergunta: como reduzir o tempo entre o disparo do alarme e uma decisão confiável, acionando a equipe mais cedo, e só quando for preciso?" |
-| 0:34–0:54 | Fluxo da solução (sensor → IA na borda → drone → operador → equipe) | "O SENTINELA une sensores IoT na cerca, câmeras com visão computacional processada na borda, drones que fazem a verificação aérea automática e um mapa operacional. O alarme já chega ao operador com imagem, classificação da IA e contexto. E quem decide é sempre uma pessoa." |
-| 0:54–1:12 | Personas (4 grupos) | "Mapeamos dezessete personas: quem usa, como a operadora, o agente de resposta e a piloto de drone; quem recebe informação, como a coordenação e o regulador; quem é afetado, como terceirizados e vizinhos; e quem mantém, como técnicos e o encarregado de dados." |
-| 1:12–1:24 | Telas T1 e T2 | "No painel, o alarme aparece no mapa e na fila, com cronômetro. Na verificação, a operadora vê a evidência e o contexto, e decide com um clique." |
-| 1:24–1:37 | Telas T3, T4 e T5 | "O drone vai até o ponto que a câmera não cobre. O agente recebe a ocorrência no celular. E a manutenção vê na hora quando um dispositivo para, e qual ponto cego isso cria." |
-| 1:37–1:52 | Próximos passos | "Nas sprints três e quatro, vamos construir a aplicação web, com dados simulados de sensores, IA e drones. A meta: decisão em menos de um minuto. SENTINELA: do alarme à decisão." |
+| 0:00–0:10 | Título SENTINELA | "Olá! Eu sou o Maykon e, em nome do grupo, apresento o SENTINELA: uma plataforma para verificar alarmes de perímetro em instalações nucleares, criada para o desafio da FIAP com a AMAZUL." |
+| 0:10–0:33 | O problema e a pergunta | "Hoje, quando um sensor dispara na cerca, o operador precisa achar a câmera certa, interpretar a imagem e, na dúvida, mandar uma equipe até o local só para ver. A maioria desses alarmes vem de animais, vento ou vegetação, e um alarme real pode se perder no meio deles. Nossa pergunta é: como reduzir o tempo até uma decisão confiável, acionando a equipe mais cedo, e só quando for preciso?" |
+| 0:33–0:53 | Fluxo sensor → IA na borda → drone → operador → equipe | "O SENTINELA junta sensores IoT na cerca, câmeras com visão computacional processada na borda, drones que fazem a verificação aérea e um mapa operacional. O alarme já chega ao operador com imagem, a classificação da inteligência artificial e o contexto, como clima e trabalhos autorizados na área. Mas a IA não decide sozinha: quem decide é sempre uma pessoa." |
+| 0:53–1:12 | Personas em 4 grupos | "Mapeamos dezessete personas em quatro grupos: quem usa o sistema, como a operadora, o agente de resposta e a piloto de drone; quem recebe as informações, como a coordenação e o regulador; quem é afetado, como terceirizados e vizinhos; e quem mantém o sistema funcionando, como os técnicos de manutenção e o encarregado de dados." |
+| 1:12–1:24 | Telas T1 e T2 | "No painel, o alarme aparece no mapa e na fila, com um cronômetro rodando. Na tela de verificação, a operadora vê a evidência, a classificação e o contexto, e decide com um clique." |
+| 1:24–1:37 | Telas T3, T4 e T5 | "Quando a câmera não cobre o ponto, o drone vai até lá numa rota aprovada. O agente recebe a ocorrência no celular, com foto e mapa. E a manutenção vê na hora quando um dispositivo para, e qual ponto cego isso cria." |
+| 1:37–1:52 | Próximos passos | "Nas sprints três e quatro, vamos construir a aplicação web com as oito telas, usando dados simulados de sensores, IA e drones. Tudo com trilha de auditoria e relatórios para a gestão. Nossa meta é uma decisão em menos de um minuto. SENTINELA: do alarme à decisão. Obrigado!" |
 
 ---
 

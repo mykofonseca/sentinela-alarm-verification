@@ -73,8 +73,8 @@ python fonte/video/build_video.py     # gera video/pitch_sentinela.mp4 (narraç�
 
 ## Vídeo pitch
 
-- Arquivo: [`video/pitch_sentinela.mp4`](video/pitch_sentinela.mp4)
-- YouTube (não listado): _adicionar link_
+- Arquivo base, sem áudio: [`video/pitch_sentinela.mp4`](video/pitch_sentinela.mp4) · roteiro: [`roteiro_fala.md`](roteiro_fala.md)
+- **YouTube (não listado): https://youtu.be/0dk0inX6b4o** (versão final, narrada por Maykon Santana Fonseca)
 
 ## Próximos passos (Sprints 3 e 4)
 

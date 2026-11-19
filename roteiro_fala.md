@@ -1,5 +1,7 @@
 # Roteiro de fala — Vídeo pitch SENTINELA
 
+Apresentador: **Maykon Santana Fonseca**.
+
 Duração total: **1min52s**. Cada bloco corresponde a um slide do vídeo; o tempo indica quando o slide aparece e quando ele troca.
 Dica: fale em ritmo tranquilo. Se sobrar tempo no bloco, faça uma pausa, sem acelerar.
 
@@ -8,7 +10,7 @@ Dica: fale em ritmo tranquilo. Se sobrar tempo no bloco, faça uma pausa, sem ac
 ### 1. Abertura — 0:00 a 0:11 (11 s)
 *Slide: título SENTINELA*
 
-> Olá! Nós somos Gustavo, Lincoln, Maykon e Nicolas, e apresentamos o SENTINELA: um sistema que ajuda a verificar alarmes de perímetro em instalações nucleares.
+> Olá! Eu sou o Maykon e, em nome do grupo, apresento o SENTINELA: um sistema para verificar alarmes de perímetro em instalações nucleares.
 
 ### 2. Problema — 0:11 a 0:34 (23 s)
 *Slide: o problema e a pergunta "Como podemos..."*

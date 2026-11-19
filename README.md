@@ -13,7 +13,7 @@ Este repositório reúne a entrega das **Sprints 1 e 2**: documento de planejame
 | Nome | RM |
 |---|---|
 | Gustavo Franzoti Gonçalves | RM566983 |
-| Lincoln Simao Pereira | RM567284 |
+| Lincoln Simão Pereira | RM567284 |
 | Maykon Santana Fonseca | RM567041 |
 | Nicolas Sakaue Nishimura | RM567752 |
 

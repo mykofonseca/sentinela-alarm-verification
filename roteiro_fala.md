@@ -13,9 +13,9 @@ Dica: fale em ritmo tranquilo. Se sobrar tempo no bloco, faça uma pausa, sem ac
 ### 2. Problema — 0:11 a 0:34 (23 s)
 *Slide: o problema e a pergunta "Como podemos..."*
 
-> Quando um alarme dispara na cerca, o operador precisa achar a câmera certa, olhar a imagem e, na dúvida, mandar uma equipe até lá só para ver o que foi.
-> E na maioria das vezes é um animal, o vento ou a vegetação.
-> Então a nossa pergunta é: como reduzir o tempo entre o alarme e uma decisão confiável, chamando a equipe só quando for preciso?
+> Quando um alarme dispara na cerca, o operador precisa achar a câmera certa, olhar a imagem e, na dúvida, mandar uma equipe até lá.
+> Na maioria das vezes, é um animal, o vento ou a vegetação.
+> Nossa pergunta é: como reduzir o tempo até uma decisão confiável, chamando a equipe só quando for preciso?
 
 ### 3. Solução — 0:34 a 0:54 (20 s)
 *Slide: fluxo sensor → IA na borda → drone → operador → equipe*
